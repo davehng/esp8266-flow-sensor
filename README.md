@@ -1,2 +1,2 @@
 # esp8266-flow-sensor
-esp8266 arduino code that adapts a FS400A flow sensor for opensprinkler
+ESP8266 arduino code that adapts a FS400A flow sensor for opensprinkler. The FS400A pulses too fast for an OpenSprinkler to read, so this Arduino code for a Wemos D1 mini acts like a shift register and decreases the pulse granularity so an OpenSpinkler is capable of polling the output pin. It also sends messages periodically via MQTT so the flow rate can be recorded elsewhere.
